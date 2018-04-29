@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyWrapping", "KeyWrapping\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordProtection", "PasswordProtection\PasswordProtection.csproj", "{C54E80B2-9042-46F4-9CDA-A02D6690EB4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalSignatures", "DigitalSignatures\DigitalSignatures.csproj", "{CCD7CBE6-A76C-418C-9E98-2B4A5CD3CBAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -31,5 +33,9 @@ Global
 		{C54E80B2-9042-46F4-9CDA-A02D6690EB4E}.Debug|x86.Build.0 = Debug|Any CPU
 		{C54E80B2-9042-46F4-9CDA-A02D6690EB4E}.Release|x86.ActiveCfg = Release|Any CPU
 		{C54E80B2-9042-46F4-9CDA-A02D6690EB4E}.Release|x86.Build.0 = Release|Any CPU
+		{CCD7CBE6-A76C-418C-9E98-2B4A5CD3CBAA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CCD7CBE6-A76C-418C-9E98-2B4A5CD3CBAA}.Debug|x86.Build.0 = Debug|Any CPU
+		{CCD7CBE6-A76C-418C-9E98-2B4A5CD3CBAA}.Release|x86.ActiveCfg = Release|Any CPU
+		{CCD7CBE6-A76C-418C-9E98-2B4A5CD3CBAA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
