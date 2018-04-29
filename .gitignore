@@ -1,0 +1,8 @@
+
+\.DS_Store
+
+Secrets/bin/Debug/netcoreapp2\.0/
+
+Secrets/obj/Debug/netcoreapp2\.0/
+
+Secrets/obj/
