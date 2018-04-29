@@ -1,10 +1,14 @@
 ﻿<Properties StartupConfiguration="{434A83C8-CA40-45EE-BEB5-69154F6F7CA0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Secrets/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SimpleEncryptDecrypt/KeyVaultBase.cs">
     <Files>
       <File FileName="Secrets/IKeyVault.cs" Line="3" Column="32" />
       <File FileName="Secrets/KeyVault.cs" Line="8" Column="32" />
       <File FileName="Secrets/KeyVaultBase.cs" Line="10" Column="32" />
-      <File FileName="Secrets/Program.cs" Line="5" Column="32" />
+      <File FileName="Secrets/Program.cs" Line="10" Column="10" />
+      <File FileName="SimpleEncryptDecrypt/Program.cs" Line="5" Column="32" />
+      <File FileName="SimpleEncryptDecrypt/IKeyVault.cs" Line="3" Column="45" />
+      <File FileName="SimpleEncryptDecrypt/KeyVault.cs" Line="8" Column="45" />
+      <File FileName="SimpleEncryptDecrypt/KeyVaultBase.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
