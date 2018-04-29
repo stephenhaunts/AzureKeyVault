@@ -1,21 +1,28 @@
-﻿<Properties StartupConfiguration="{D10685FE-655F-433E-9965-D36016CD2EF7}|Default">
+﻿<Properties StartupConfiguration="{C54E80B2-9042-46F4-9CDA-A02D6690EB4E}|Default">
   <MonoDevelop.Ide.ItemProperties.KeyWrapping PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="KeyWrapping/AesEncryption.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PasswordProtection/HMAC.cs">
     <Files>
       <File FileName="Secrets/IKeyVault.cs" Line="3" Column="32" />
       <File FileName="Secrets/KeyVault.cs" Line="8" Column="32" />
       <File FileName="Secrets/KeyVaultBase.cs" Line="10" Column="32" />
-      <File FileName="Secrets/Program.cs" Line="25" Column="1" />
-      <File FileName="SimpleEncryptDecrypt/Program.cs" Line="30" Column="32" />
+      <File FileName="Secrets/Program.cs" Line="23" Column="1" />
+      <File FileName="SimpleEncryptDecrypt/Program.cs" Line="26" Column="87" />
       <File FileName="SimpleEncryptDecrypt/IKeyVault.cs" Line="3" Column="45" />
       <File FileName="SimpleEncryptDecrypt/KeyVault.cs" Line="8" Column="45" />
       <File FileName="SimpleEncryptDecrypt/KeyVaultBase.cs" Line="10" Column="45" />
       <File FileName="KeyWrapping/IKeyVault.cs" Line="3" Column="36" />
       <File FileName="KeyWrapping/KeyVault.cs" Line="8" Column="36" />
       <File FileName="KeyWrapping/KeyVaultBase.cs" Line="10" Column="36" />
-      <File FileName="KeyWrapping/Program.cs" Line="5" Column="36" />
+      <File FileName="KeyWrapping/Program.cs" Line="32" Column="19" />
       <File FileName="KeyWrapping/Random.cs" Line="7" Column="50" />
-      <File FileName="KeyWrapping/AesEncryption.cs" Line="8" Column="22" />
+      <File FileName="KeyWrapping/AesEncryption.cs" Line="31" Column="23" />
+      <File FileName="PasswordProtection/IKeyVault.cs" Line="3" Column="43" />
+      <File FileName="PasswordProtection/KeyVault.cs" Line="8" Column="43" />
+      <File FileName="PasswordProtection/KeyVaultBase.cs" Line="10" Column="43" />
+      <File FileName="PasswordProtection/PBKDF2.cs" Line="6" Column="6" />
+      <File FileName="PasswordProtection/Random.cs" Line="3" Column="43" />
+      <File FileName="PasswordProtection/Program.cs" Line="5" Column="43" />
+      <File FileName="PasswordProtection/HMAC.cs" Line="7" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
@@ -27,4 +34,8 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Secrets PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>PasswordProtection/KeyWrapping.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.PasswordProtection PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
