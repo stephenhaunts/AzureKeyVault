@@ -82,14 +82,35 @@ namespace AzureKeyVault.DigitalSignatures
             return secretName;
         }
 
-        public Task<byte[]> Sign(string keyId, byte[] hash)
+        public async Task<byte[]> Sign(string keyId, byte[] hash)
         {
-            throw new System.NotImplementedException();
+            using (var rsa = new RSACryptoServiceProvider(2048))
+            {
+                rsa.PersistKeyInCsp = false;
+                rsa.ImportParameters(privateKey[keyId]);
+
+                var rsaFormatter = new RSAPKCS1SignatureFormatter(rsa);
+                rsaFormatter.SetHashAlgorithm("SHA256");
+
+                await Task.CompletedTask;
+
+                return rsaFormatter.CreateSignature(hash);
+            }
         }
 
-        public Task<bool> Verify(string keyId, byte[] hash, byte[] signature)
+        public async Task<bool> Verify(string keyId, byte[] hash, byte[] signature)
         {
-            throw new System.NotImplementedException();
+            using (var rsa = new RSACryptoServiceProvider(2048))
+            {
+                rsa.ImportParameters(publicKey[keyId]);
+
+                var rsaDeformatter = new RSAPKCS1SignatureDeformatter(rsa);
+                rsaDeformatter.SetHashAlgorithm("SHA256");
+
+                await Task.CompletedTask;
+
+                return rsaDeformatter.VerifySignature(hash, signature);
+            }
         }
     }
 }

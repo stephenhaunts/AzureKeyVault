@@ -1,33 +1,6 @@
-﻿<Properties StartupConfiguration="{D10685FE-655F-433E-9965-D36016CD2EF7}|Default">
+﻿<Properties StartupConfiguration="{CCD7CBE6-A76C-418C-9E98-2B4A5CD3CBAA}|Default">
   <MonoDevelop.Ide.ItemProperties.KeyWrapping PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DigitalSignatures/FakeKeyVault.cs">
-    <Files>
-      <File FileName="SimpleEncryptDecrypt/Program.cs" Line="36" Column="1" />
-      <File FileName="SimpleEncryptDecrypt/IKeyVault.cs" Line="17" Column="1" />
-      <File FileName="SimpleEncryptDecrypt/KeyVault.cs" Line="32" Column="10" />
-      <File FileName="SimpleEncryptDecrypt/KeyVaultBase.cs" Line="7" Column="32" />
-      <File FileName="KeyWrapping/Random.cs" Line="7" Column="50" />
-      <File FileName="KeyWrapping/AesEncryption.cs" Line="11" Column="14" />
-      <File FileName="KeyWrapping/Program.cs" Line="40" Column="1" />
-      <File FileName="PasswordProtection/PBKDF2.cs" Line="6" Column="6" />
-      <File FileName="PasswordProtection/HMAC.cs" Line="3" Column="43" />
-      <File FileName="PasswordProtection/Program.cs" Line="42" Column="1" />
-      <File FileName="DigitalSignatures/Program.cs" Line="26" Column="50" />
-      <File FileName="DigitalSignatures/KeyVault.cs" Line="20" Column="10" />
-      <File FileName="KeyWrapping/KeyVault.cs" Line="65" Column="4" />
-      <File FileName="KeyWrapping/IKeyVault.cs" Line="3" Column="36" />
-      <File FileName="Secrets/KeyVault.cs" Line="65" Column="4" />
-      <File FileName="PasswordProtection/KeyVault.cs" Line="65" Column="4" />
-      <File FileName="SimpleEncryptDecrypt/FakeKeyVault.cs" Line="11" Column="78" />
-      <File FileName="Secrets/Program.cs" Line="23" Column="1" />
-      <File FileName="Secrets/IKeyVault.cs" Line="3" Column="32" />
-      <File FileName="Secrets/FakeKeyVault.cs" Line="12" Column="9" />
-      <File FileName="PasswordProtection/FakeKeyVault.cs" Line="5" Column="43" />
-      <File FileName="KeyWrapping/FakeKeyVault.cs" Line="5" Column="36" />
-      <File FileName="DigitalSignatures/Hash.cs" Line="4" Column="42" />
-      <File FileName="DigitalSignatures/FakeKeyVault.cs" Line="5" Column="42" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>

@@ -13,7 +13,7 @@ namespace AzureKeyVault.DigitalSignatures
 
         public static async Task KeyVault()
         {
-            IKeyVault vault = new KeyVault();
+            IKeyVault vault = new FakeKeyVault();
 
             const string MY_KEY_NAME = "StephenHauntsKey";
             string keyId = await vault.CreateKeyAsync(MY_KEY_NAME);
