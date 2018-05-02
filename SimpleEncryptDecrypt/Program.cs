@@ -13,7 +13,7 @@ namespace AzureKeyVault.SimpleEncryptDecrypt
 
         public static async Task KeyVault()
         {
-            IKeyVault vault = new FakeKeyVault();
+            IKeyVault vault = new KeyVault();
 
             const string MY_KEY_NAME = "StephenHauntsKey";
 
