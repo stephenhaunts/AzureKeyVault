@@ -1,33 +1,23 @@
 ﻿<Properties StartupConfiguration="{CCD7CBE6-A76C-418C-9E98-2B4A5CD3CBAA}|Default">
   <MonoDevelop.Ide.ItemProperties.KeyWrapping PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DigitalSignatures/Hash.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PasswordProtection/KeyVault.cs">
     <Files>
-      <File FileName="Secrets/IKeyVault.cs" Line="3" Column="32" />
-      <File FileName="Secrets/KeyVault.cs" Line="8" Column="32" />
-      <File FileName="Secrets/KeyVaultBase.cs" Line="10" Column="32" />
-      <File FileName="Secrets/Program.cs" Line="23" Column="1" />
-      <File FileName="SimpleEncryptDecrypt/Program.cs" Line="26" Column="87" />
-      <File FileName="SimpleEncryptDecrypt/IKeyVault.cs" Line="3" Column="45" />
-      <File FileName="SimpleEncryptDecrypt/KeyVault.cs" Line="8" Column="45" />
-      <File FileName="SimpleEncryptDecrypt/KeyVaultBase.cs" Line="10" Column="45" />
-      <File FileName="KeyWrapping/IKeyVault.cs" Line="16" Column="2" />
-      <File FileName="KeyWrapping/KeyVault.cs" Line="38" Column="34" />
-      <File FileName="KeyWrapping/KeyVaultBase.cs" Line="24" Column="29" />
-      <File FileName="KeyWrapping/Program.cs" Line="32" Column="19" />
+      <File FileName="SimpleEncryptDecrypt/Program.cs" Line="38" Column="2" />
+      <File FileName="SimpleEncryptDecrypt/IKeyVault.cs" Line="17" Column="1" />
+      <File FileName="SimpleEncryptDecrypt/KeyVault.cs" Line="32" Column="10" />
+      <File FileName="SimpleEncryptDecrypt/KeyVaultBase.cs" Line="7" Column="32" />
       <File FileName="KeyWrapping/Random.cs" Line="7" Column="50" />
-      <File FileName="KeyWrapping/AesEncryption.cs" Line="31" Column="23" />
-      <File FileName="PasswordProtection/IKeyVault.cs" Line="3" Column="43" />
-      <File FileName="PasswordProtection/KeyVault.cs" Line="8" Column="43" />
-      <File FileName="PasswordProtection/KeyVaultBase.cs" Line="10" Column="43" />
+      <File FileName="KeyWrapping/AesEncryption.cs" Line="11" Column="14" />
+      <File FileName="KeyWrapping/Program.cs" Line="40" Column="1" />
       <File FileName="PasswordProtection/PBKDF2.cs" Line="6" Column="6" />
-      <File FileName="PasswordProtection/Random.cs" Line="3" Column="43" />
-      <File FileName="PasswordProtection/Program.cs" Line="32" Column="28" />
       <File FileName="PasswordProtection/HMAC.cs" Line="13" Column="10" />
-      <File FileName="DigitalSignatures/KeyVault.cs" Line="8" Column="42" />
-      <File FileName="DigitalSignatures/IKeyVault.cs" Line="3" Column="42" />
-      <File FileName="DigitalSignatures/Program.cs" Line="5" Column="42" />
-      <File FileName="DigitalSignatures/Hash.cs" Line="4" Column="42" />
-      <File FileName="DigitalSignatures/KeyVaultBase.cs" Line="10" Column="42" />
+      <File FileName="PasswordProtection/Program.cs" Line="42" Column="1" />
+      <File FileName="DigitalSignatures/Program.cs" Line="26" Column="50" />
+      <File FileName="DigitalSignatures/KeyVault.cs" Line="20" Column="10" />
+      <File FileName="KeyWrapping/KeyVault.cs" Line="10" Column="45" />
+      <File FileName="KeyWrapping/IKeyVault.cs" Line="17" Column="1" />
+      <File FileName="Secrets/KeyVault.cs" Line="65" Column="4" />
+      <File FileName="PasswordProtection/KeyVault.cs" Line="32" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
@@ -35,8 +25,12 @@
     <BreakpointStore>
       <Breakpoint file="/Users/stephenhaunts/Documents/Git/AzureKeyVault/Secrets/Program.cs" relfile="Secrets/Program.cs" line="16" column="18" />
       <Breakpoint file="/Users/stephenhaunts/Documents/Git/AzureKeyVault/PasswordProtection/Program.cs" relfile="PasswordProtection/Program.cs" line="16" column="1" />
+      <Breakpoint file="/Users/stephenhaunts/Documents/Git/AzureKeyVault/DigitalSignatures/Program.cs" relfile="DigitalSignatures/Program.cs" line="16" column="1" />
+      <Breakpoint file="/Users/stephenhaunts/Documents/Git/AzureKeyVault/SimpleEncryptDecrypt/Program.cs" relfile="SimpleEncryptDecrypt/Program.cs" line="16" column="1" />
+      <Breakpoint file="/Users/stephenhaunts/Documents/Git/AzureKeyVault/KeyWrapping/Program.cs" relfile="KeyWrapping/Program.cs" line="18" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.SimpleEncryptDecrypt PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.DigitalSignatures PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Secrets PreferredExecutionTarget="MonoDevelop.Default" />
