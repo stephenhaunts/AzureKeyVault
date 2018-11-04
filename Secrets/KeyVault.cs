@@ -11,8 +11,8 @@ namespace AzureKeyVault.Secrets
     {
         public KeyVault()
         {
-            var clientId = "922e5bfc-98b3-4f23-bcbb-8a12439ebbfb";
-            var clientSecret = "PsAJTPBeG1WwFq+hH+ZQAh9xadcNI60cep8FYPpt3Ew=";
+            var clientId = "fc25ed2c-43e4-479d-a550-7baf3a172bbb";
+            var clientSecret = "ItQBEzyIR+baZPn5VVSBmXf6pa5bZlPuyYrXIcc3lGU=";
             VaultAddress = "https://RIKeyVault.vault.azure.net/";
 
             ClientCredential = new ClientCredential(clientId, clientSecret);

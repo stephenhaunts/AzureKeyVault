@@ -21,7 +21,7 @@ namespace AzureKeyVault.SimpleEncryptDecrypt
             Console.WriteLine("Key Written : " + keyId);
 
             // Test encryption and decryption.
-            string dataToEncrypt = "Mary had a little lamb";
+            string dataToEncrypt = "Hello World!!";
 
             byte[] encrypted = await vault.EncryptAsync(keyId, Encoding.ASCII.GetBytes(dataToEncrypt));
             byte[] decrypted = await vault.DecryptAsync(keyId, encrypted);
@@ -32,7 +32,6 @@ namespace AzureKeyVault.SimpleEncryptDecrypt
             // Remove HSM backed key
             await vault.DeleteKeyAsync(MY_KEY_NAME);
             Console.WriteLine("Key Deleted : " + keyId);
-
         }
     }
 }

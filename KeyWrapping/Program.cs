@@ -38,7 +38,6 @@ namespace AzureKeyVault.KeyWrapping
             // Remove HSM backed key
             await vault.DeleteKeyAsync(MY_KEY_NAME);
             Console.WriteLine("Key Deleted : " + keyId);
-
         }
     }
 }

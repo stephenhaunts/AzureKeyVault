@@ -16,30 +16,28 @@ namespace AzureKeyVault.PasswordProtection
             IKeyVault vault = new KeyVault();
 
             const string MY_KEY_NAME = "StephenHauntsKey";
+            const string ITERATIONS_VALUE = "PBKDF2Iterations";
+
             string keyId = await vault.CreateKeyAsync(MY_KEY_NAME);
 
-            byte[] localKey = Random.GenerateRandomNumber(32);
+            // Encrypt our salt with Key Vault and Store it in the database
+            byte[] salt = Random.GenerateRandomNumber(32);
+            byte[] encryptedSalt = await vault.EncryptAsync(keyId, salt);
+            var iterationsId = await vault.SetSecretAsync(ITERATIONS_VALUE, "20000");
 
-            // Encrypt our local key with Key Vault and Store it in the database
-            byte[] encryptedKey = await vault.EncryptAsync(keyId, localKey);
-
-
-            // Get our encrypted key from the database and decrypt it with the Key Vault.
-            byte[] decryptedKey = await vault.DecryptAsync(keyId, encryptedKey);
+            // Get our encrypted salt from the database and decrypt it with the Key Vault.
+            byte[] decryptedSalt = await vault.DecryptAsync(keyId, encryptedSalt);
+            int iterations = int.Parse(await vault.GetSecretAsync(ITERATIONS_VALUE));
 
             // Hash our password with a PBKDF2
             string password = "Pa55w0rd";
-            byte[] salt = Random.GenerateRandomNumber(32);
-            byte[] hashedPassword = PBKDF2.HashPassword(Encoding.ASCII.GetBytes(password), salt, 20000);
 
-            // Now do a HMAC of the password using the key that was decrypted from the Key Vault
-            byte[] protectedPassword = Hmac.ComputeHmacsha256(hashedPassword, decryptedKey);
-
+            byte[] hashedPassword = PBKDF2.HashPassword(Encoding.ASCII.GetBytes(password), decryptedSalt, iterations);
             Console.WriteLine("Hashed Password : " + Convert.ToBase64String(hashedPassword));
-            Console.WriteLine("Protected Hashed Password : " + Convert.ToBase64String(protectedPassword));
-           
+
             // Remove HSM backed key
             await vault.DeleteKeyAsync(MY_KEY_NAME);
+
             Console.WriteLine("Key Deleted : " + keyId);
         }
     }

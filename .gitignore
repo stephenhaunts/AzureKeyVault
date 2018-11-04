@@ -30,3 +30,5 @@ DigitalSignatures/bin/Debug/netcoreapp2\.0/
 DigitalSignatures/obj/Debug/netcoreapp2\.0/
 
 DigitalSignatures/obj/
+
+\.vs/AzureKeyVault/xs/sqlite3/

@@ -41,12 +41,12 @@ namespace AzureKeyVault.SimpleEncryptDecrypt
 
         protected Dictionary<string, string> GetKeyTags()
         {
-            return new Dictionary<string, string> { { "purpose", "Master Key" }, { "LadderPay Core", "LadderPay" } };
+            return new Dictionary<string, string> { { "purpose", "Master Key" }, { "MyApp Core", "MyApp" } };
         }
 
         protected Dictionary<string, string> GetSecretTags()
         {
-            return new Dictionary<string, string> { { "purpose", "Encrypted Secret" }, { "LadderPay Core", "LadderPay" } };
+            return new Dictionary<string, string> { { "purpose", "Encrypted Secret" }, { "MyApp Core", "MyApp" } };
         }
 
         protected async Task<string> GetAccessTokenAsync(string authority, string resource, string scope)
