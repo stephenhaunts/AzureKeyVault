@@ -18,21 +18,21 @@ namespace AzureKeyVault.PasswordProtection
             const string MY_KEY_NAME = "StephenHauntsKey";
             const string ITERATIONS_VALUE = "PBKDF2Iterations";
 
-            string keyId = await vault.CreateKeyAsync(MY_KEY_NAME);
+            var keyId = await vault.CreateKeyAsync(MY_KEY_NAME);
 
             // Encrypt our salt with Key Vault and Store it in the database
-            byte[] salt = Random.GenerateRandomNumber(32);
-            byte[] encryptedSalt = await vault.EncryptAsync(keyId, salt);
+            var salt = SecureRandom.GenerateRandomNumber(32);
+            var encryptedSalt = await vault.EncryptAsync(keyId, salt);
             var iterationsId = await vault.SetSecretAsync(ITERATIONS_VALUE, "20000");
 
             // Get our encrypted salt from the database and decrypt it with the Key Vault.
-            byte[] decryptedSalt = await vault.DecryptAsync(keyId, encryptedSalt);
-            int iterations = int.Parse(await vault.GetSecretAsync(ITERATIONS_VALUE));
+            var decryptedSalt = await vault.DecryptAsync(keyId, encryptedSalt);
+            var iterations = int.Parse(await vault.GetSecretAsync(ITERATIONS_VALUE));
 
             // Hash our password with a PBKDF2
-            string password = "Pa55w0rd";
+            var password = "Pa55w0rd";
 
-            byte[] hashedPassword = PBKDF2.HashPassword(Encoding.ASCII.GetBytes(password), decryptedSalt, iterations);
+            var hashedPassword = PBKDF2.HashPassword(Encoding.UTF8.GetBytes(password), decryptedSalt, iterations);
             Console.WriteLine("Hashed Password : " + Convert.ToBase64String(hashedPassword));
 
             // Remove HSM backed key

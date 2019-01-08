@@ -32,3 +32,11 @@ DigitalSignatures/obj/Debug/netcoreapp2\.0/
 DigitalSignatures/obj/
 
 \.vs/AzureKeyVault/xs/sqlite3/
+
+\.vs/AzureKeyVault/xs/
+
+\.idea/\.idea\.AzureKeyVault/\.idea/
+
+\.idea/\.idea\.AzureKeyVault/
+
+*.user
