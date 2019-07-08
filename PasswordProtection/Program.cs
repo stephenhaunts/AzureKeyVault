@@ -25,6 +25,12 @@ namespace AzureKeyVault.PasswordProtection
             var encryptedSalt = await vault.EncryptAsync(keyId, salt);
             var iterationsId = await vault.SetSecretAsync(ITERATIONS_VALUE, "20000");
 
+
+
+
+
+
+
             // Get our encrypted salt from the database and decrypt it with the Key Vault.
             var decryptedSalt = await vault.DecryptAsync(keyId, encryptedSalt);
             var iterations = int.Parse(await vault.GetSecretAsync(ITERATIONS_VALUE));

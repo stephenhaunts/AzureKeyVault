@@ -24,6 +24,11 @@ namespace AzureKeyVault.KeyWrapping
             byte[] encryptedKey = await vault.EncryptAsync(keyId, localKey);
 
 
+
+
+
+
+
             // Get our encrypted key from the database and decrypt it with the Key Vault.
             byte[] decryptedKey = await vault.DecryptAsync(keyId, encryptedKey);
 
