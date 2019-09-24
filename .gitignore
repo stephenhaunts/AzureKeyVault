@@ -40,3 +40,15 @@ DigitalSignatures/obj/
 \.idea/\.idea\.AzureKeyVault/
 
 *.user
+
+DigitalSignatures/bin/Debug/netcoreapp3.0/
+
+KeyWrapping/bin/Debug/netcoreapp3.0/
+
+PasswordProtection/bin/Debug/netcoreapp3.0/
+
+Secrets/bin/Debug/netcoreapp3.0/
+
+*.dll
+
+SimpleEncryptDecrypt/bin/Debug/netcoreapp3.0/
